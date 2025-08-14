@@ -8,3 +8,6 @@ Route::get('/', function () {
 use App\Http\Controllers\CursoController;
 
 Route::resource('cursos', CursoController::class);
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
